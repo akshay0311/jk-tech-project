@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import DisplayList from '../components/DisplayList/DisplayList.js';
+import DisplayList from '../components/DisplayList/DisplayList';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -20,7 +20,7 @@ interface PostDetailProps {
 const PostsList : React.FC<PostDetailProps>= ({posts, handleDelete, handleOpen}) => {
   const navigate = useNavigate();
 
-  const redirectToPostDetail = (id) => {
+  const redirectToPostDetail = (id : number) => {
     navigate(`/details/${id}`);
   };
 

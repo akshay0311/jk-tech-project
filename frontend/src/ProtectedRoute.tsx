@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "./context/AuthContext.tsx";
+import { useAuth } from "./context/AuthContext";
 
 const ProtectedRoute = ({ path, children }: { path: any, children: React.ReactNode }) => {
   const { isAuthenticated, login } = useAuth();

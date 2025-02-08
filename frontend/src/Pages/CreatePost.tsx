@@ -1,5 +1,5 @@
 import React from 'react';
-import PostForm from '../components/PostForm/PostForm.js';
+import PostForm from '../components/PostForm/PostForm';
 
 type CreatePostProps = {
   form: {

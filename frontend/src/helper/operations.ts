@@ -17,12 +17,11 @@ const getHeader = () => {
 
 // 1. CREATE - Add a new post
 export async function createPost(postData: PostData): Promise<any> {
+  
   try {
     const response = await fetch(API_URL, {
       method: 'POST',
-      headers : {
-        "Content-Type": "application/json"
-      },
+      headers : getHeader(),
       body: JSON.stringify(postData)
     });
     const data = await response.json();
@@ -72,7 +71,8 @@ export async function deletePost(postId : number) : Promise<any>{
   const headers = getHeader();
   try {
     const response = await fetch(`${API_URL}/${postId}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers
     });
     if (response.ok) {
       console.log(`Post with ID ${postId} deleted successfully.`);

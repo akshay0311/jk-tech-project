@@ -16,7 +16,7 @@ interface PostDetailProps {
 
 const PostDetail : React.FC<PostDetailProps>= ({ posts }) => {
   const { id } = useParams();
-  const post = posts.find((p) => p.id === parseInt(id));
+  const post = posts.find((p) => p.id === parseInt(String(id)));
 
   if (!post) {
     return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 import { Container, AppBar, Toolbar, Typography, Button, Card, CardContent, TextField, Stack, Dialog, DialogTitle, DialogContent, DialogActions, Box } from '@mui/material';
 import { Add as AddIcon } from '@mui/icons-material';
 
@@ -7,7 +7,7 @@ interface DialogBoxProps {
   handleClose: () => void;
   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   form: { title: string; content: string };
-  handleSubmit: () => void;
+  handleSubmit: (e: FormEvent) => void;
 }
 
 const DialogBox: React.FC<DialogBoxProps> = ({ open, handleClose, handleChange, form, handleSubmit }) => {
