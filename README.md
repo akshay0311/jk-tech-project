@@ -19,3 +19,9 @@ Creating a blog site with frontend using Reactjs and Backend in Nestjs where use
 - **PostgreSQL**
 - **Passportjs**
 - **Material-UI**
+
+## Installation
+
+```sh
+git clone https://github.com/akshay0311/jk-tech-project
+npm install
