@@ -47,7 +47,7 @@ DB_PORT=5432
 DB_USERNAME=postgres
 DB_PASSWORD= 'DomSec#123'
 DB_NAME=postgres
-JWT_SECRET=my_secret_key
+JWT_SECRET=your-secret-key
 ```
 
 ## Run the app
