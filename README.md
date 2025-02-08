@@ -65,14 +65,14 @@ npm run start
 
 ## Dockerize the app
 
-# Run the docker build for React frontend
+Run the docker build for React frontend
 
 ```sh
 docker build -t react-app .
 docker run -d -p 3001:3001 react-app
 ```
 
-# Run the docker build for Nest backend 
+Run the docker build for Nest backend 
 
 ```sh
 docker build -t nest-app .
