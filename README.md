@@ -22,6 +22,9 @@ Creating a blog site with frontend using Reactjs and Backend in Nestjs where use
 
 ## Installation
 
+It contains two folder : Frontend (Reactjs) Backend (Nestjs)
+Both requires below steps:
+
 ```sh
 git clone https://github.com/akshay0311/jk-tech-project
 npm install
