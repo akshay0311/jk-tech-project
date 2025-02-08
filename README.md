@@ -12,3 +12,10 @@ Creating a blog site with frontend using Reactjs and Backend in Nestjs where use
 - Frontend is created using Reactjs in which UI components are created using Material-UI and routing is done using react-router-dom.
 - All the routes related to creating and reading blogs are protected and only authenitcated user can access these routes
 
+## Prerequisites
+
+- **Nest.js**
+- **Reactjs**
+- **PostgreSQL**
+- **Passportjs**
+- **Material-UI**
