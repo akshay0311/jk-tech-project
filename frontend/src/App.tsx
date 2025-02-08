@@ -1,20 +1,21 @@
 import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header.tsx';
-import { getPosts, createPost, deletePost, updatePost } from './helper/operations.ts';
-import Dashboard from "./Pages/PostsList.tsx";
-import Login from './Pages/Login.tsx';
-import PostsDetail from './Pages/PostDetail.tsx';
-import CreatePost from './Pages/CreatePost.tsx';
-import ProtectedRoute from './ProtectedRoute.tsx';
-import DialogBox from './components/DialogBox.tsx';
+import Header from './components/Header/Header';
+import { getPosts, createPost, deletePost, updatePost } from './helper/operations';
+import Dashboard from "./Pages/PostsList";
+import Login from './Pages/Login';
+import PostsDetail from './Pages/PostDetail';
+import CreatePost from './Pages/CreatePost';
+import ProtectedRoute from './ProtectedRoute';
+import DialogBox from './components/DialogBox/DialogBox';
 
 interface Post {
   id: number;
   title: string;
   content: string;
   author: string;
+  date: string;
 }
 
 const App: React.FC = () => {

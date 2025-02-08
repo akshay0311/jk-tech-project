@@ -2,12 +2,12 @@ import React from 'react';
 import { Container, Typography, Box, Paper } from '@mui/material';
 import { useParams } from 'react-router-dom';
 
-interface Post{
-    id : number,
-    title : String,
-    content : String,
-    author : String,
-    date : Date
+interface Post {
+  id: number;
+  title: string;
+  content: string;
+  author: string;
+  date: string;
 }
 
 interface PostDetailProps {

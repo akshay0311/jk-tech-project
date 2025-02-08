@@ -25,7 +25,7 @@ const PostForm: React.FC<PostFormProps> = ({ form, handleChange, handleSubmit })
           Add New Post
         </Typography>
 
-        <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        <Box component="form" role="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           <TextField
             label="Title"
             name="title"

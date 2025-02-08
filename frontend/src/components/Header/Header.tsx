@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Add as AddIcon } from '@mui/icons-material';
-import { useAuth } from '../context/AuthContext.tsx';
+import { useAuth } from '../../context/AuthContext';
 
 interface HeaderProps {
     handleOpen: () => void;

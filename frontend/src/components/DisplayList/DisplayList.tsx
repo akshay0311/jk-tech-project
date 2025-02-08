@@ -22,7 +22,7 @@ const DisplayList: React.FC<DisplayListProps> = ({ posts, handleDelete, handleOp
       <Stack spacing={2} direction="row" flexWrap="wrap" justifyContent="center" style={{ marginTop: 20 }}>
         {posts?.map((post) => (
           <Box key={post.id} sx={{ width: { xs: '100%', sm: '48%', md: '30%' }, mb: 2 }}>
-            <Card onClick={() => redirectToPostDetail(post.id)} style={{ cursor: 'pointer' }}>
+            <Card onClick={() => redirectToPostDetail(String(post.id))} style={{ cursor: 'pointer' }}>
               <CardContent>
                 <Typography variant="h5">{post.title}</Typography>
                 <Typography variant="body2">{post.content.substring(0, 50)}...</Typography>

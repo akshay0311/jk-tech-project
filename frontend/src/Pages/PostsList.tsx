@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import DisplayList from '../components/DisplayList.tsx';
+import DisplayList from '../components/DisplayList/DisplayList.js';
 import { useNavigate } from 'react-router-dom';
 
 
