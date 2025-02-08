@@ -33,6 +33,14 @@ npm install
 ## Run the app
 
 ```sh
-git clone https://github.com/akshay0311/jk-tech-project
-npm install
+# Reactjs App
+npm start
+
+# Nestjs App
+
+# development
+npm run start
+
+# watch mode
+npm run start:dev
 ```
