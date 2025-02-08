@@ -35,6 +35,21 @@ git clone https://github.com/akshay0311/jk-tech-project
 npm install
 ```
 
+# Add configuration 
+
+Create .env file and add these configuration
+
+```sh
+GOOGLE_CLIENT_ID=126855534697-pq76bphdugh533jlp62r5jh3qtvid52p.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD= 'DomSec#123'
+DB_NAME=postgres
+JWT_SECRET=my_secret_key
+```
+
 ## Run the app
 
 ```sh
