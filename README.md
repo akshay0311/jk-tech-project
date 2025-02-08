@@ -28,3 +28,11 @@ Both requires below steps:
 ```sh
 git clone https://github.com/akshay0311/jk-tech-project
 npm install
+```
+
+## Run the app
+
+```sh
+git clone https://github.com/akshay0311/jk-tech-project
+npm install
+```
