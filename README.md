@@ -7,9 +7,10 @@ Creating a blog site with frontend using Reactjs and Backend in Nestjs where use
 
 - The project uses **NestJS** to build a backend system for user authentication which is then used for performing CRUD operations on database created using Postgres.
 - It includes **CRUD APIs** to perform operations like (read list of posts and create post) and authentication api that perform google authentication.
-- Google Authentication is done using Passportjs which helps in Authenticating users and redirect user to the dashboard sending the JWT token to the client.
+- Google Authentication is done using **Passportjs** which helps in Authenticating users and redirect user to the dashboard sending the JWT token to the client.
 - Then the client makes the subsequent requests to fetch and create posts by sending jwt token in the header.
 - Only authorized user (i.e. users having bearer token in the header) are able to make request to the **CRUD APIs**.
+- Operations are done on postgres database with the help of **TypeORM**.
 - Frontend is created using Reactjs in which UI components are created using **Material-UI** and routing is done using **react-router-dom**.
 - All the routes related to creating and reading blogs are protected and only authenitcated user can access these routes.
 - Project also contains scripts that use **Terraform** to deploy the frontend and backend to AWS.
