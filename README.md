@@ -63,6 +63,22 @@ npm run start
 
 ```
 
+## Dockerize the app
+
+Run the docker build for React frontend
+
+```sh
+docker build -t react-app .
+docker run -d -p 3001:3001 react-app
+```
+
+Run the docker build for Nest backend 
+
+```sh
+docker build -t nest-app .
+docker run -d -p 3002:3002 nest-app
+```
+
 ## Key APIS
 
 CRUD API for Posts
