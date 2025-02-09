@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "cypress": "^14.0.2",
+    "cypress-localstorage-commands": "^2.2.7",
+    "cypress-real-events": "^1.14.0"
+  }
+}
