@@ -56,10 +56,17 @@ JWT_SECRET=your-secret-key
 # Reactjs App
 npm start
 
+# Visit
+localhost:3001
+
 # Nestjs App
 
 # development
-npm run start
+npm run start:dev
+
+# Visit
+localhost:3002
+
 
 ```
 
