@@ -1,6 +1,7 @@
-import { Controller, Get, Req, Res, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Req, Res, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Request, Response } from 'express';
+import * as jwt from "jsonwebtoken";
 
 @Controller('auth')
 export class AuthController {
@@ -23,5 +24,13 @@ export class AuthController {
         }
 
         res.redirect(`http://localhost:3001/dashboard?token=${user.token}`);
+    }
+    @Get("google-test")
+    loginWithGoogleTest() {
+        const token = jwt.sign(
+        { sub: "1234567890", name: "Test User", email: "testuser@gmail.com" },
+        "your-secret-key",
+        );
+        return { token };
     }
 }
