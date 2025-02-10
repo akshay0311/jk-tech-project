@@ -16,6 +16,7 @@ Creating a blog site with frontend using Reactjs and Backend in Nestjs where use
 - Project also contains scripts that use **Terraform** to deploy the frontend and backend to AWS.
 - **Docker Image** is there for both frontend and backend.
 - **Unit Testing** is done for the components in frontend and API's in backend.
+- **Integration Testing** is done for the App
 
 ## Prerequisites
 
